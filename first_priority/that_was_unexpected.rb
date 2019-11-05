@@ -1,3 +1,5 @@
+require 'pry'
+
 class Person
   attr_accessor :name, :candy_lover
 
@@ -14,16 +16,18 @@ class Person
     false
   end
 
+
   def likes_candy?
     true
   end
 
   def ballin_candy_lover?
     if @candy_lover == true
-      "Aw sweet, this cat loves them some candy!"
+      p "Aw sweet, this cat loves them some candy!"
     else
       10.times do
-        "not a ballin candy lover"
+        p "not a ballin candy lover"
+      end
     end
   end
 end
