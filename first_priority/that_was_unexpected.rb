@@ -1,6 +1,8 @@
+require 'pry'
+
 class Person
   attr_accessor :name, :candy_lover
-
+  
   def initialize(name, candy_lover)
     @name = name
     @candy_lover = candy_lover
@@ -18,7 +20,7 @@ class Person
     true
   end
 
-  def ballin_candy_lover?
+def ballin_candy_lover?
     if @candy_lover == true
       "Aw sweet, this cat loves them some candy!"
     else
@@ -27,3 +29,5 @@ class Person
     end
   end
 end
+end
+
