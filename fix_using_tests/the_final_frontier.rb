@@ -1,4 +1,4 @@
-lrequire "pry"
+
 
 def generate_star_date
   (rand(100000) + 400000) / 10.0
@@ -15,7 +15,9 @@ end
 
 
 def greet_crew(array)
-  array.each {|crew_member| puts "Hello #{crew_member}."}
+  array.map do |crew_member|
+    "Hello #{crew_member}."
+  end
 end
 
 def engage
